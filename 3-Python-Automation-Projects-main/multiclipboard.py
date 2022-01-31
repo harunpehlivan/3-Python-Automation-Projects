@@ -13,8 +13,7 @@ def save_data(filepath, data):
 def load_data(filepath):
     try:
         with open(filepath, "r") as f:
-            data = json.load(f)
-            return data
+            return json.load(f)
     except:
         return {}
 
